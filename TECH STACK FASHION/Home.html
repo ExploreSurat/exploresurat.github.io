@@ -1,0 +1,106 @@
+<!-- This is our first website by tack stack on 18/12/21 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>www.Explore Surat.com </title>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <header style="background-color: rgb(29, 203, 119)" class="text-gray-600 body-font">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <img src="Explore Surat logo.jpeg" height="50" width="50">
+        <span class="ml-3 text-xl">Explore Surat</span>
+      </a>
+      <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+        <a href="Heritage Places.html" class="mr-5 hover:text-gray-900"><b>Heritage Places</b></a>
+        <a href="Temples.html" class="mr-5 hover:text-gray-900"><b>Temples</b></a>
+        <a href="Mall.html" class="mr-5 hover:text-gray-900"><b>Mall</b></a>
+        <a href="Restaurants.html" class="mr-5 hover:text-gray-900"><b>Restaurants</b></a>
+        <a href="Famous Places.html" class="mr-5 hover:text-gray-900"><b>Famous Places</b></a>
+        <a href="Hotels.html" class="mr-5 hover:text-gray-900"><b>Hotels</b></a>
+
+      </nav>
+      </a>
+    </div>
+    <hr>
+  </header>
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <style>
+      /* Styles for the slides */
+      .slides {
+        display: none;
+        width: 100%;
+        height: 70;
+        margin: auto;
+      } 
+      .images__slide{
+        justify-content: center;
+        text-align: center;
+        /* margin-left: 10rem; */
+  
+      }
+      .head{
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+  
+    </style>
+  </head>
+  <body style="background-color:  rgb(29, 203, 119)" class="text-gray-600 body-font">
+    <!-- Slides -->
+    <div class="images__slide">
+      <img class="slides" src="Surat HOME PIC.jpg" alt="Slide 1">
+      <img class="slides" src="Surat 3.jpg" alt="Slide 2">
+      <img class="slides" src="surat4.jpg" alt="Slide 3">
+    </div>
+    <!-- JavaScript for slide show -->
+    <script>
+      var slides = document.getElementsByClassName("slides");
+      var slideIndex = 0;
+  
+      function showSlides() {
+        for (var i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 2000); // Change slide every 2 seconds
+      }
+      showSlides();
+    </script>
+  </body>
+  </html>
+  <body>
+    <br>
+    <div style="text-align:center;">
+      <video width="1500" controls>
+        <source src="WhatsApp Video 2023-02-11 at 10.26.22 AM.mp4" type="video/mp4">
+      </video>
+    </div>
+  </body>
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col text-center w-full mb-20">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">About</h1>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base"> Surat is a city located in the Indian state of Gujarat.
+          It is the eighth largest city in India and is known for its rich history, cultural heritage, and fast-growing
+          economy. Surat is often referred to as the "Silk City" due to its thriving textile industry and is one of the
+          largest producers of silk in India. The city is also famous for its diamond cutting and polishing industry,
+          which is one of the largest in the world. </p>
+      </div>
+      <div class="flex flex-wrap -m-4 text-center">
+        <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+        </div>
+      </div>
+  </section>
+</html>

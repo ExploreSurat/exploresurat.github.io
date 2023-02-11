@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Styles for the slides */
+    .slides {
+      display: none;
+      width: 60%;
+      height: 60%;
+      margin: auto;
+    }
+    .slides1 {
+      display: none;
+      width: 60%;
+      height: 60%;
+      margin: auto;
+    }
+    .images__slide{
+      justify-content: center;
+      text-align: center;
+      /* margin-left: 10rem; */
+
+    }
+    .head{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- Slides -->
+  <div class="images__slide">
+    <img class="slides" src="images.jpg" alt="Slide 1">
+    
+    <img class="slides" src="Level 5.jpg" alt="Slide 2">
+    <img class="slides" src="images.jpg" alt="Slide 3">
+    <h1 class="head">this is heading</h1>
+    <p>Lorem ipsum dolor sit amet.</p>
+  </div>
+  
+
+  <!-- JavaScript for slide show -->
+  
+
+
+  <div class="images__slide">
+    <img class="slides1" src="images.jpg" alt="Slide 1">
+    <img class="slides1" src="Level 5.jpg" alt="Slide 2">
+    <img class="slides1" src="images.jpg" alt="Slide 3">
+  </div>
+  
+
+
+  <script>
+    var slides = document.getElementsByClassName("slides");
+    var slideIndex = 0;
+
+    function showSlides() {
+      for (var i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 2000); // Change slide every 2 seconds
+    }
+    showSlides();
+    var slides = document.getElementsByClassName("slides1");
+    var slideIndex = 0;
+
+    function showSlides1() {
+      for (var i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 2000); // Change slide every 2 seconds
+    }
+    showSlides1();
+  </script>
+</body>
+</html>
